@@ -224,12 +224,6 @@
   cursor: pointer;
 }
 
-.action-icons:hover {
-  transform: scale(1.1);
-  transition: 0.4s ease;
-  border-bottom: 2px solid rebeccapurple;
-  padding-bottom: 3px;
-}
 
 h3 {
   cursor: pointer;
