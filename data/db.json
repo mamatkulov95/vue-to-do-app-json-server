@@ -1,28 +1,11 @@
 {
   "projects": [
     {
+      "title": "jdlkjaldka",
+      "deadline": "klfjskjds\n",
+      "complete": false,
       "id": 1,
-      "title": "Create Vue Navbar and Dashboard ",
-      "deadline": "This dashboard will be completed at least 3 days",
       "completed": false
-    },
-    {
-      "id": 2,
-      "title": "Create Vue Home Page",
-      "deadline": "This  will be completed at least 3 days",
-      "completed": false
-    },
-    {
-      "title": "Learning Mongodb ",
-      "deadline": "At least three days",
-      "complete": false,
-      "id": 3
-    },
-    {
-      "title": "Abdulloh ",
-      "deadline": "Furqat bolnitsa ertaga olib borish",
-      "complete": false,
-      "id": 4
     }
   ]
 }

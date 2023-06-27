@@ -1,30 +1,31 @@
 <template>
   <nav class="main-nav">
-    <router-link :to="{ name: 'home' }">Tasks</router-link>
-    <router-link :to="{ name: 'addProject' }">Add a New Deadline</router-link>
+    <router-link :to="{ name: 'home' }">
+      <img src="@/assets/QD.png" alt="Logo Quick Deal" style="height: 60px" />
+    </router-link>
+    <div class="menus">
+      <router-link v-for="link in menuLinks" :key="link.name" :to="link.name">{{
+        link.label
+      }}</router-link>
+    </div>
   </nav>
 </template>
 
 <script>
-export default {
+import data from "../../data/data.json";
 
-}
+export default {
+  data() {
+    return {
+      menuLinks: [],
+    };
+  },
+  mounted() {
+    this.menuLinks = data.menuLinks;
+  },
+};
 </script>
 
 <style>
-  .main-nav {
-    text-align: center;
-    margin: 40px auto;
-  }
-  .main-nav a{
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 10px;
-    color: #fff;
-    font-size: 18px;
-  }
-  a.router-link-active {
-    border-bottom: 2px solid #00ce89;
-    padding-bottom: 4px;
-  }
+@import "@/assets/style.css";
 </style>

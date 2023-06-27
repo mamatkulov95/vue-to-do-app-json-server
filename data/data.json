@@ -1,0 +1,7 @@
+{
+  "menuLinks": [
+    { "name": "/", "label": "Tasks" },
+    { "name": "add", "label": "Add Task" },
+    { "name": "about", "label": "About Us" }
+  ]
+}
