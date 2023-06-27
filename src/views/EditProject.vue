@@ -19,16 +19,21 @@ export default {
     };
   },
   async mounted() {
-    let { data } = await axios.get("http://localhost:3000/projects/" + this.id);
+    let { data } = await axios.get(
+      "https://vue-json-server-202f9705172c.herokuapp.com/" + this.id
+    );
     this.title = data.title;
     this.deadline = data.deadline;
   },
   methods: {
     async handleSubmit() {
-      await axios.patch("http://localhost:3000/projects/" + this.id, {
-        title: this.title,
-        deadline: this.deadline,
-      });
+      await axios.patch(
+        "https://vue-json-server-202f9705172c.herokuapp.com/" + this.id,
+        {
+          title: this.title,
+          deadline: this.deadline,
+        }
+      );
       this.$router.push({ name: "home" });
     },
   },

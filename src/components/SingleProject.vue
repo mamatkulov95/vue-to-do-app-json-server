@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       showDeadLine: false,
-      url: "http://localhost:3000/projects/" + this.user.id,
+      url: "https://vue-json-server-202f9705172c.herokuapp.com/" + this.user.id,
     };
   },
 
