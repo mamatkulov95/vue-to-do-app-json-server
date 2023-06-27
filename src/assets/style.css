@@ -42,20 +42,23 @@
 
 .about-us {
   width: 100vw;
-  margin: auto;
-  color: #fff;
   padding: 25px;
   text-align: center;
 }
 
 .about-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(153.51deg, #FFFFFF -31.42%, rgba(255, 255, 255, 0) 83.37%), rgba(40, 48, 77, .59);
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(33px);
   border-radius: 6px;
-  padding: 37px 45px 36px;
-  margin: 60px auto;
-  border: 1px solid red
+  padding: 30px;
+  width: 500px;
+  margin: auto;
+  border: 2px solid blueviolet;
 }
 
 .about-title {
@@ -63,6 +66,7 @@
   line-height: 36px;
   font-weight: 700;
   padding: 10px 20px;
+  max-width: 30vw;
 }
 
 .qd-title {
@@ -93,6 +97,7 @@
   padding-top: 20px;
   font-size: 16px;
   line-height: 28px;
+  max-width: 30vw;
 }
 
 .team {
@@ -128,7 +133,45 @@
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .about-us {
+    padding: 15px;
+  }
 
+  .about-heading {
+    padding: 15px;
+    width: 320px;
+  }
+
+  .about-title {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 300px;
+  }
+
+  .qd-title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .about-content {
+    font-size: 16px;
+    max-width: 300px;
+  }
+
+  .experience {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 12px;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 350px;
+  }
+
+
+}
 
 
 /* Filter nav */
@@ -163,7 +206,6 @@
   border-radius: 5px;
   padding: 5px 10px;
 }
-
 
 .project {
   width: 80vw;
