@@ -1,24 +1,18 @@
 {
   "projects": [
     {
-      "title": "jdlkjaldka",
-      "deadline": "klfjskjds\n",
+      "title": "Task1",
+      "deadline": "explanation of the task",
       "complete": false,
       "id": 1,
-      "completed": true
+      "completed": false
     },
     {
-      "title": "rkfkslkfd",
-      "deadline": "ffffffffffffffff\n",
+      "title": "Task3",
+      "deadline": "dsdsds",
       "complete": false,
       "id": 2,
       "completed": true
-    },
-    {
-      "title": "vajaj",
-      "deadline": "sss",
-      "complete": false,
-      "id": 3
     }
   ]
 }

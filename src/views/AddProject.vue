@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      await axios.post("https://vue-json-server-202f9705172c.herokuapp.com/", {
+      await axios.post("http://localhost:3000/projects/", {
         title: this.title,
         deadline: this.deadline,
         complete: false,

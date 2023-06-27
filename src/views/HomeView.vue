@@ -32,9 +32,7 @@ export default {
   },
 
   async mounted() {
-    const response = await axios.get(
-      "https://vue-json-server-202f9705172c.herokuapp.com/"
-    );
+    const response = await axios.get("http://localhost:3000/projects/");
     this.users = await response.data;
   },
   methods: {
